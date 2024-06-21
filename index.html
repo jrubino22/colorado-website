@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Colorado</title>
+    <link href="/styles/global.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <span class="header-title">
+            Colorado - The Centennial State
+        </span>
+        <nav id="navigation">
+            <a href="#">
+                Home
+            </a>
+            <a href="/denver.html">
+                Denver
+            </a>
+            <a href="/colorado-springs.html">
+                Colorado Springs
+            </a>
+            <a href="/durango">
+                Durango
+            </a>
+        </nav>
+    </header>
+    <div class="image-section">
+        <img src="/images/colorado-header.jpg" alt="colorado lake">
+        <div class="image-text-container">
+            <h1>Colorado</h1>
+        </div>
+    </div>
+    <section>
+        <h2>
+            Colorado Facts and Figures
+        </h2>
+        <div class="tables-container">
+            <div class="table-wrapper">
+                <h3>By the Numbers</h3>
+                <Info-Table
+                    year="2000 | 2024"
+                    population="4.327 million | 5.84 million"
+                    average-income="$24,049 | $44,196"
+                    average-home-value="$166,600 | $552,622"
+                >
+                </Info-Table>
+            </div>
+            <div class="table-wrapper">
+                <h3>Quick Facts</h3>
+                <Info-Table
+                    null
+                    statehood="1876"
+                    region="Mountain West"
+                    tallest-mountain="Mount Elbert (14,433ft)"
+                    state-bird="Lark Bunting"
+                >
+                </Info-Table>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <h2>
+            Explore Colorado
+        </h2>
+        <div>
+            <div>
+                <h3>What to Eat</h3>
+            </div>
+            <div>
+                <h3>Top Tourist Destinations</h3>
+            </div>
+            <div>
+                <h3>How to get here</h3>
+            </div>
+        </div>
+    </aside>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <span class="error hidden">Emails must match!</span>
+            </div>
+            <div class="form-row">
+                <input type="text" id="first" name="first" placeholder="First Name">
+                <input type="text" id="last" name="last" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+                <input type="text" id="email" name="email" placeholder="Email">                  
+                <input type="text" id="cemail" name="cemail" placeholder="Confirm Email">
+            </div>
+            <div class="form-row">
+                <textarea 
+                    id="message"
+                    name="message"
+                    cols="50"
+                    rows="10"
+                    placeholder="Type your message here">Type your message here.
+                </textarea>
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="/scripts/global.js"></script>
 </body>
 </html>
